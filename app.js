@@ -13,7 +13,7 @@ const getRandomAdvice = () => {
 // Function that displays the advice ID and text on the page
 const displayRandomAdvice = (data) => {
     adviceId.textContent = `#${data.id}`;
-    adviceText.textContent = `"${data.advice}"`;
+    adviceText.textContent = `“${data.advice}”`;
 };
 
 // Click event listener on the DOM button

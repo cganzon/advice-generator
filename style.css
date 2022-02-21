@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202733;
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-desktop {
+    display: none;
+}
+
+.container {
+    background-color: #313A48;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin: 50px 16px;
+    width: 540px;
+}
+
+.advice-header {
+    color: #53ffaa;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.45714px;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+
+.advice-text {
+    color: #cee3e9;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.257143px;
+    padding: 24px;
+}
+
+.advice-btn {
+    cursor: pointer;
+    background: #53ffaa;
+    padding:  20px 20px 17px 20px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: box-shadow 0.2s;
+}
+
+.advice-btn:focus {
+    outline: none;
+}
+
+.advice-btn:hover,
+.advice-btn:focus-visible {
+    box-shadow: 0px 0px 40px #53FFAA;
+}
+
+.divider {
+    padding-bottom: 64px;
+}
+
+@media(min-width: 530px) {
+    .advice-header {
+        font-size: 13px;
+        padding-top: 48px;
+    }
+
+    .advice-text {
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -0.3px;
+        padding: 24px 48px 40px 48px;
+    }
+
+    .divider {
+        padding-bottom: 72px;
+    }
+
+    .divider-mobile {
+        display: none;
+    }
+
+    .divider-desktop {
+        display: inline;
+    }
+}
