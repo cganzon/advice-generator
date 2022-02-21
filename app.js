@@ -1,4 +1,4 @@
-const adviceId = document.querySelector('.advice-id');
+const adviceHeader = document.querySelector('.advice-header');
 const adviceText = document.querySelector('.advice-text');
 const adviceBtn = document.querySelector('.advice-btn');
 
@@ -12,12 +12,9 @@ const getRandomAdvice = () => {
 
 // Function that displays the advice ID and text on the page
 const displayRandomAdvice = (data) => {
-    adviceId.textContent = `#${data.id}`;
+    adviceHeader.textContent = `Advice #${data.id}`;
     adviceText.textContent = `“${data.advice}”`;
 };
 
 // Click event listener on the DOM button
 adviceBtn.addEventListener('click', getRandomAdvice);
-
-// Calling getRandomAdvice to display advice when the page first loads
-getRandomAdvice();
